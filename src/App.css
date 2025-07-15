@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/* フッター */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--border);
+}
+
+.footer > *:not(:first-child) {
+    margin-left: 1rem;
+}
+
+/* アンカー */
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* 色付きアンカー */
+a:not(.not-colored), a:not(.not-colored) * {
+    color: #3478f6;
+}
+
+/* 文字中央 */
+.center {
+    text-align: center;
+}
+
+/* ルートのコンテナ */
+.root-container {
+    padding: 1rem;
+}
+
+/* 分割線 */
+.separator {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 1px;
+    background: var(--border);
+}

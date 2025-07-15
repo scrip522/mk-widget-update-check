@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* 背景 */
+html {
+    background: var(--background);
+}
+
+/* マージン初期化 */
+body, p, h1, h2 {
+    margin: 0;
+}
+
+/* 全要素 */
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: var(--font);
+}
+
+/* 色の変数 */
+@media (prefers-color-scheme: light) {
+    :root {
+        color-scheme: light;
+        --border: #00000055;
+        --background: #eee;
+        --layer-1: #fff;
+        --layer-2: #ccc;
+        --font: #000;
+    }
+}
+
+:root {
+    --anchor: #3478f6;
+    --blue: #99ccff;
+}
